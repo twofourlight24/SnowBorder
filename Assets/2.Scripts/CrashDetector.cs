@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class CrashDetector : MonoBehaviour
         if (other.CompareTag("Ground"))
         {
             Debug.Log("아이고 내 대가리 날라가겠네");
+            SceneManager.LoadScene(0);
         }
     }
 }

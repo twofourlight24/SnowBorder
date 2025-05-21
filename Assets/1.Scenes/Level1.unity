@@ -220,7 +220,7 @@ Transform:
   m_GameObject: {fileID: 57042258}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -124.10675, y: 255.88, z: -8.856373}
+  m_LocalPosition: {x: 1095.6848, y: 274.9, z: -8.856373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -253,7 +253,7 @@ Transform:
   m_GameObject: {fileID: 59183598}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.3, y: 12.2, z: -0}
+  m_LocalPosition: {x: -0.12, y: -11.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -353,7 +353,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -472,8 +472,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 20
-      minScalar: 10
+      scalar: 50
+      minScalar: 30
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5278,7 +5278,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -124.10675, y: 255.88, z: -8.856373}
+  m_LocalPosition: {x: 1095.6848, y: 274.9, z: -8.856373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6876,7 +6876,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -11612,7 +11612,7 @@ Transform:
   m_GameObject: {fileID: 1138380091}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.063783236, w: -0.99796385}
-  m_LocalPosition: {x: -141.89, y: 255.88, z: 1.1436272}
+  m_LocalPosition: {x: 1077.9, y: 274.9, z: 1.1436272}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12037,6 +12037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e7edc25a6c824c9f5640143b79b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSystem: {fileID: 59183601}
 --- !u!4 &1631484887
 Transform:
   m_ObjectHideFlags: 0
@@ -12085,7 +12086,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
