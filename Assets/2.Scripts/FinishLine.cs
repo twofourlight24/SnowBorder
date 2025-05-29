@@ -3,16 +3,28 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
-    public ParticleSystem ParticleSystem;
+    public ParticleSystem FinishEffect;
+    public AudioSource audioSource;
+    public float reloadDelay = 2f;
+    bool isFinished = false;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        var shapeModule = ParticleSystem.shape;
-
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isFinished)
         {
-            ParticleSystem.Play();
-            Debug.Log("완주했습니다");
+            isFinished = true;
+            FinishEffect.Play();
+            Invoke(nameof(ReloadScene), reloadDelay);
+            audioSource.Play();
+        }
+
+        void ReloadScene()
+        {
             SceneManager.LoadScene(0);
         }
     }
